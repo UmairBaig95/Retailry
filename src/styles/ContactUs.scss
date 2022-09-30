@@ -1,0 +1,60 @@
+.contactUs-main {
+  border-radius: 0px !important;
+  border: none !important;
+  background-color: #f1f6f5 !important;
+  .card-body {
+    padding: 0rem;
+    padding-top: 2rem;
+  }
+
+  input[type="text"],
+  [type="email"],
+  [type="phone"],
+  select {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #d7dbda;
+    background-color: #f1f6f5 !important;
+  }
+  input[type="text"]:hover,
+  input[type="text"]:focus,
+  [type="email"]:hover,
+  [type="email"]:focus,
+  select:hover,
+  select:focus {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #008379;
+    box-shadow: none !important;
+  }
+  .submit {
+    width: 14rem;
+  }
+}
+
+.react-tel-input {
+  padding: 0rem !important;
+  padding-left: 0rem !important;
+  border: 0rem !important;
+  border-radius: 0px !important;
+  border-bottom: 2px solid #d7dbda !important;
+  background-color: #f1f6f5 !important;
+
+  .form-control {
+    border: none !important;
+    padding-left: 42px !important;
+    padding-top: 1.9rem;
+    font-size: 1rem !important;
+    background-color: #f1f6f5 !important;
+  }
+  :focus {
+    box-shadow: none !important;
+  }
+
+  .flag-dropdown {
+    border: none !important;
+    background-color: white !important;
+    top: 15px !important;
+    background-color: #f1f6f5 !important;
+  }
+}

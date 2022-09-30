@@ -1,0 +1,42 @@
+.our-client-main {
+ 
+  padding-top: 4rem;
+  .our-clients {
+    margin-top: 6rem !important;
+    padding-bottom: 0rem !important;
+    .our-Client-Logo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .rounded {
+        padding: 1rem !important;
+        width: 13rem;
+      }
+    }
+  }
+
+  .our-client-image {
+    width: 60%;
+    margin-left: 8rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .our-client-main {
+    padding-top: 1rem;
+    .our-clients {
+      margin-top: 2rem !important;
+      text-align: center;
+    }
+    .our-Client-Logo {
+      grid-template-columns: none !important;
+      justify-content: center;
+      .rounded {
+        margin-bottom: 1rem;
+      }
+    }
+    .our-client-image {
+      margin-left: 3.5rem;
+      margin-top: 3rem;
+    }
+  }
+}

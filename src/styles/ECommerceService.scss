@@ -1,0 +1,51 @@
+.eCommerce-main {
+  .eCommerce-main-title {
+    h1 {
+      padding: 0rem 14rem !important;
+    }
+  }
+
+  .eCommerce-image-cards {
+    margin-top: 4rem;
+    .eCommerce-image {
+      padding-left: 1.5rem !important;
+      padding-top: 0rem !important;
+    }
+  }
+
+  .eCommerce-services {
+    margin-top: 3rem;
+    .card {
+      border: none !important;
+      img {
+        padding-top: 1rem !important;
+      }
+      .card-body {
+        padding-left: 0rem !important;
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+  .eCommerce-main {
+    .eCommerce-main-title {
+      h1 {
+        padding: 0rem 1rem !important;
+        font-size: 20px !important;
+      }
+    }
+    .eCommerce-image-cards {
+      margin-top: 0rem !important;
+      text-align: center;
+      .eCommerce-image {
+        display: none;
+      }
+    }
+  }
+  
+ 
+}

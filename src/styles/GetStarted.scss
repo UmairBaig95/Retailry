@@ -1,0 +1,96 @@
+.line-template {
+  position: relative;
+  top: -0.5rem;
+  border: none;
+  height: 4px;
+  width: 90% !important;
+  background: #63b3ad;
+  margin-bottom: 50px;
+  margin: 0rem 2.3rem;
+}
+
+.template-btn {
+  .Coustom-btn,
+  .Coustom-btn:hover,
+  .Coustom-btn:focus,
+  .Coustom-btn:active {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #008379;
+    border-radius: 0px;
+    padding-bottom: 0.81rem;
+  }
+
+  .Coustom-btn:focus {
+    font-weight: 700;
+
+    z-index: 1;
+    opacity: 1;
+  }
+
+  .Coustom-btn {
+    svg {
+      position: absolute;
+      bottom: -0.5px;
+      left: 48%;
+      color: #ffb34d;
+      visibility: hidden;
+    }
+  }
+  .active-item {
+    border-bottom: 4px solid #ffb34d !important;
+    svg {
+      visibility: visible !important;
+    }
+  }
+}
+
+.template-cards {
+  .card {
+    border: none !important;
+    width: 15rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+    .card-body {
+      padding-left: 0rem !important;
+      background-color: #008379;
+      color: white;
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 420px) {
+  .template-btn {
+    button {
+      font-size: 0.65rem;
+      font-weight: 500;
+    }
+    .Coustom-btn {
+      svg {
+        left: 43%;
+      }
+    }
+  }
+
+  .line-template {
+    width: 90% !important;
+    margin: 0rem 0.4rem;
+  }
+  .template-cards {
+    div:first-child {
+      flex-direction: column !important;
+    }
+
+    .card {
+      width: 22rem;
+      margin-right: 0rem;
+      margin-top: 0rem;
+      padding: 2rem;
+      padding-top: 0rem;
+    }
+  }
+}

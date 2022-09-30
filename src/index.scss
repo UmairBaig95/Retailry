@@ -1,0 +1,77 @@
+$backGroundColorGray : #f1f6f5;
+$colorGreen : #008379;
+
+body {
+    background-color: #f1f6f5!important;
+}
+.grayBackground
+{
+    background-color: $backGroundColorGray;
+}
+
+.greenBackground
+{
+    background-color: $colorGreen;
+}
+
+.btn-success
+{
+  background-color: $colorGreen;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white !important;
+}
+.btn-success, .btn-success:hover, .btn-success:focus, .btn-success:active {
+  text-decoration: none;
+  color: inherit;
+  background-color: $colorGreen !important;
+}
+.white-bg {
+  background: #fff;
+}
+
+
+.fontRoboto
+{
+    font-family: 'Roboto';
+}
+
+.fontPoppins
+{
+    font-family: 'Poppins';
+}
+
+.fontNotoSans
+{
+    font-family: 'Noto Sans';
+}
+
+.text-black
+{
+  color: black;
+}
+
+.plr-2 
+{
+  padding-left: 2rem ;
+  padding-right: 2rem;
+}
+
+.ptb-3
+{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.paragraphFont 
+{
+  font-size: 0.9rem;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .plr-2 
+{
+  padding-left: 0rem ;
+  padding-right: 0rem;
+}
+}
