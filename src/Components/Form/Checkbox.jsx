@@ -1,12 +1,12 @@
 import React from "react";
-import { Field, useField, ErrorMessage } from "formik";
+import { Field, FastField, useField, ErrorMessage } from "formik";
 function Checkbox({ data }) {
   const { label, name, options, ...rest } = data
   return (
     <>
       <label className="form-outline">{label}</label>
       <div className="coustom-checkbox position-relative mb-5">
-        <Field name={name}>
+        <FastField name={name}>
           {({ field }) => {
             return options.map((option, i) => {
               return (
@@ -26,7 +26,7 @@ function Checkbox({ data }) {
               );
             });
           }}
-        </Field>
+        </FastField>
         <ErrorMessage
           component="div"
           name={name}

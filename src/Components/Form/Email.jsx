@@ -13,7 +13,6 @@ function Email({data})  {
         <input
             autoComplete="off"
             {...field}
-            {...data}
             id={field.name}
             className={`form-control text-field form-control-lg ${
               meta.touched && meta.error && "is-invalid"

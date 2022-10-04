@@ -12,7 +12,7 @@ const options = [
 ];
 
 function CoustomSelect({ data }) {
-  const [selectedOption, setSelectedOption] = useState(null);
+
   const [field, state, { setValue, setTouched }] = useField(data);
   const onChange = ({ value }) => {
     setValue(value);
@@ -26,10 +26,9 @@ function CoustomSelect({ data }) {
 
         <Select
           id="socialMediaSelect"
-          
-          {...data}
           onChange={onChange}
           options={options}
+          name={field.name}
         />
         <ErrorMessage
           component="div"

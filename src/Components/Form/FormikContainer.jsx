@@ -1,5 +1,6 @@
 import React from "react";
-import { Formik, Form } from "formik";
+import { Formik, FastField, Form } from "formik";
+import emailjs from 'emailjs-com'
 import * as Yup from "yup";
 import "../../styles/contactUs.scss";
 import FormController from "./FormController";
@@ -36,6 +37,13 @@ function ContactUsForm() {
     checkBoxOptions: Yup.array().required("At Least Select One!"),
     message: Yup.string().required("Require"),
   });
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_jlzo82c', 'template_6ji3zpt', e.target, '3yDMdm_GlFO-4PVi8' ).then(res=>{
+      console.log(res);
+
+    }).catch(err => console.log(err))
+  } 
   return (
     <Formik
       initialValues={{
@@ -48,16 +56,17 @@ function ContactUsForm() {
         checkBoxOptions: [],
       }}
       validationSchema={validate}
-      onSubmit={(values, { setSubmitting }) => {
+      onSubmit={(values, e) => {
         console.log("values", values);
       }}
+      
     >
       {(formik) => (
         <div>
           <div className="mx-2 mx-md-5 pl-4 pl-md-2">
             <div className="card contactUs-main mx-lg-5">
               <div className="card-body mr-md-0 mr-2">
-                <Form>
+                <Form onSubmit={sendEmail}>
                   <div className="row">
                     <div className="col-md-4 col-sm-12 mb-3">
                       <FormController

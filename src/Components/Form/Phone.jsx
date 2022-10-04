@@ -17,10 +17,15 @@ function Phone({data}) {
               id={field.name}
               {...field}
               value={field.value}
+              name={field.name}
               onChange={field.onChange(field.name)}
               className={`phone-input ${
                meta.error? "invalid" : ""
               }`}
+              inputProps={{
+                name:'phone'
+               
+              }}
             />
             <p className="error text-danger py-2">{meta.error}</p>
             </div>
