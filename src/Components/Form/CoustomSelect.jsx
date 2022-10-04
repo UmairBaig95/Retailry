@@ -1,4 +1,3 @@
-import React, { Fragment, useState } from "react";
 import Select from "react-select";
 import { useField, ErrorMessage } from "formik";
 import "../../styles/TextField.scss";

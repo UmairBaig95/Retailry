@@ -1,7 +1,6 @@
 import React from 'react'
-import { useField, ErrorMessage } from "formik";
+import { useField } from "formik";
 import PhoneInput from "react-phone-input-2";
-
 import "react-phone-input-2/lib/style.css";
 import "../../styles/TextField.scss";
 function Phone({data}) {

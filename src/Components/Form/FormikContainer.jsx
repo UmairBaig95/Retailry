@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik, FastField, Form } from "formik";
-import emailjs from 'emailjs-com'
+import ReCAPTCHA from "react-google-recaptcha";
+import emailjs from "emailjs-com";
 import * as Yup from "yup";
 import "../../styles/contactUs.scss";
 import FormController from "./FormController";
@@ -11,6 +12,7 @@ import PrintMedia from "../../Components/SvgComponents/PrintMedia";
 import DigitalMarketing from "../../Components/SvgComponents/DigitalMarketing";
 import ECommerce from "../../Components/SvgComponents/ECommerce";
 function ContactUsForm() {
+  const [isVerified, setIsVerified] = useState(false);
   const checkBoxOptions = [
     { key: "branding", value: "Branding", component: <BrandingSvg /> },
     { key: "ecommerce", value: "Ecommerce", component: <MobileApp /> },
@@ -38,12 +40,30 @@ function ContactUsForm() {
     message: Yup.string().required("Require"),
   });
   const sendEmail = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_jlzo82c', 'template_6ji3zpt', e.target, '3yDMdm_GlFO-4PVi8' ).then(res=>{
-      console.log(res);
-
-    }).catch(err => console.log(err))
-  } 
+    if (isVerified === true) {
+      e.preventDefault();
+      emailjs
+        .sendForm(
+          "service_jlzo82c",
+          "template_6ji3zpt",
+          e.target,
+          "3yDMdm_GlFO-4PVi8"
+        )
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => console.log(err));
+      setIsVerified(false);
+      initialValues = {};
+    } else {
+      e.preventDefault();
+      alert("You Need to Verify First");
+    }
+  };
+  function captchaOnChange(value) {
+    console.log("Captcha value:", value);
+    setIsVerified(true);
+  }
   return (
     <Formik
       initialValues={{
@@ -59,7 +79,6 @@ function ContactUsForm() {
       onSubmit={(values, e) => {
         console.log("values", values);
       }}
-      
     >
       {(formik) => (
         <div>
@@ -118,8 +137,11 @@ function ContactUsForm() {
                       <FormController label="Body" name="message" type="text" />
                     </div>
                   </div>
-
-                  <div className="d-flex justify-content-start">
+                  <ReCAPTCHA
+                    sitekey=" 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                    onChange={captchaOnChange}
+                  />
+                  <div className="d-flex justify-content-start mt-3">
                     <button
                       type="submit"
                       className="btn submit btn-success fs-5 px-5"

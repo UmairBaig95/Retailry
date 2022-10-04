@@ -1,5 +1,5 @@
 import React from "react";
-import { Field, FastField, useField, ErrorMessage } from "formik";
+import {FastField, ErrorMessage } from "formik";
 function Checkbox({ data }) {
   const { label, name, options, ...rest } = data
   return (
