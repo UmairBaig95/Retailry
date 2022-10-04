@@ -6,7 +6,7 @@ function PricingHeader() {
     <>
       <div className="grayBackground fontRoboto p-3 fs-6">
         <div className="mx-3">
-          <nav className="navbar navbar-expand-lg navbar-light px-lg-4 mx-lg-5">
+          <nav className="navbar px-lg-4 mx-lg-5">
             <div>
               <Link className="navbar-brand" type="button" to="/">
                 <img
@@ -20,12 +20,13 @@ function PricingHeader() {
             </div>
 
             <div
-              className="collapse navbar-collapse justify-content-end"
+              className="justify-content-end"
               id="navbarNavAltMarkup"
             >
               <div className="navbar-nav">
-                <Link className="nav-item nav-link active mx-3" to="/">
+                <Link className="nav-item nav-link active" to="/">
                   <svg
+          
                     xmlns="http://www.w3.org/2000/svg"
                     width="40"
                     height="50"

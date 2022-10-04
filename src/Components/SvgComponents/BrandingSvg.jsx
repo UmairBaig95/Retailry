@@ -8,7 +8,7 @@ function BrandingSvg(props) {
  preserveAspectRatio="xMidYMid meet">
 
 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
-fill={props.fill} stroke="none">
+fill="#00000" stroke="none">
 <path d="M2994 4922 c-12 -2 -32 -14 -45 -28 -24 -25 -24 -29 -24 -221 l0
 -195 28 -24 c18 -15 41 -24 62 -24 21 0 44 9 62 24 l28 24 0 195 c0 191 -1
 196 -23 220 -24 26 -51 35 -88 29z"/>
@@ -52,7 +52,7 @@ c239 0 435 -2 435 -5z m893 -503 c39 -34 6 -112 -48 -112 -54 0 -87 78 -47
 121 -165 121 -31 0 -47 -6 -65 -26z"/>
 </g>
 </svg>
-
+<h6 className='my-4 ml-2'>Branding</h6>
     </div>
   )
 }

@@ -1,27 +1,27 @@
-$backGroundColorGray : #f1f6f5;
-$colorGreen : #008379;
+$backGroundColorGray: #f1f6f5;
+$colorGreen: #008379;
 
 body {
-    background-color: #f1f6f5!important;
+  background-color: #f1f6f5 !important;
 }
-.grayBackground
-{
-    background-color: $backGroundColorGray;
-}
-
-.greenBackground
-{
-    background-color: $colorGreen;
+.grayBackground {
+  background-color: $backGroundColorGray;
 }
 
-.btn-success
-{
+.greenBackground {
+  background-color: $colorGreen;
+}
+
+.btn-success {
   background-color: $colorGreen;
   border-radius: 5px;
   text-decoration: none;
   color: white !important;
 }
-.btn-success, .btn-success:hover, .btn-success:focus, .btn-success:active {
+.btn-success,
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
   text-decoration: none;
   color: inherit;
   background-color: $colorGreen !important;
@@ -30,48 +30,78 @@ body {
   background: #fff;
 }
 
-
-.fontRoboto
-{
-    font-family: 'Roboto';
+.fontRoboto {
+  font-family: "Roboto";
 }
 
-.fontPoppins
-{
-    font-family: 'Poppins';
+.fontPoppins {
+  font-family: "Poppins";
 }
 
-.fontNotoSans
-{
-    font-family: 'Noto Sans';
+.fontNotoSans {
+  font-family: "Noto Sans";
 }
 
-.text-black
-{
+.text-black {
   color: black;
 }
 
-.plr-2 
-{
-  padding-left: 2rem ;
+.plr-2 {
+  padding-left: 2rem;
   padding-right: 2rem;
 }
 
-.ptb-3
-{
+.ptb-3 {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
-.paragraphFont 
-{
+.paragraphFont {
   font-size: 0.9rem;
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
-  .plr-2 
-{
-  padding-left: 0rem ;
-  padding-right: 0rem;
+.form-control-lg {
+ 
+  font-size: 1rem;
+ 
 }
+
+#socialMediaSelect {
+  margin-top: 0.3rem;
+
+  .css-1s2u09g-control,
+  .css-1pahdxg-control {
+    border: none;
+    border-radius: 0px;
+    background-color: #f1f6f5;
+    border-bottom: 2px solid #d7dbda;
+
+    &:hover,
+    :focus {
+      @extend .css-1s2u09g-control;
+      background-color: #f1f6f5;
+      border: none;
+      outline: none;
+      box-shadow: none;
+      border-bottom: 2px solid #008379;
+    }
+
+    .css-1kwwvb1-ValueContainer2 {
+      background-color: #f1f6f5 !important;
+      padding: 0rem;
+    }
+  }
+
+  .css-ujecln-Input2 {
+    input[type="text"] {
+      background-color: none !important;
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .plr-2 {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
