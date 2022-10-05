@@ -14,7 +14,7 @@ function GetStarted() {
       return category.id===activeTemplate
     })
     setData(requiredTemplate.Detail)
-    console.log(requiredTemplate);
+    // console.log(requiredTemplate);
 
   },[activeTemplate])
   return (
@@ -69,7 +69,7 @@ function GetStarted() {
             <div className="justify-content-start d-flex">
               {data.map((e, i) => {
                 return (
-                  <div key={i} className="card col-12 greenBackground">
+                  <div key={i} className="card card-property col-12 greenBackground">
                     <img src={e.Image} className="card-img-top" alt="..." />
                     <div className="card-body">
                       <h5 className="card-title card-title lh-base fs-6 fontPoppins fw-bolder">

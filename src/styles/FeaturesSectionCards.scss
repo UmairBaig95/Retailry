@@ -1,0 +1,52 @@
+.digitalStore
+{
+ .digitalStore-container
+ {
+   .digitalStore-heading
+   {
+     display: inline-block;
+     h1{
+      font-size: 30px;
+     }
+   }
+
+ }
+
+}
+
+
+
+@media (min-width: 320px) and (max-width: 576px) {
+ .digitalStore
+ {
+  text-align: center;
+  .digitalStore-container
+  {
+    .digitalStore-heading
+    {
+      display: inline-block;
+      h1{
+        font-size: 16px;
+       }
+    }
+.digitalStore-cards {
+  grid-template-columns: 1fr;
+    margin-top: 0rem !important;
+    text-align: center;
+    .card {
+      padding-right: 0rem;
+      padding: 1rem 0rem;
+      .digitalStore-cards-body
+      {
+        padding: 0rem;
+      p {
+        padding: 0rem;
+    }
+  }
+    }
+  }
+  }
+ }
+
+ 
+}

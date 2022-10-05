@@ -64,11 +64,15 @@ export const footerSocialLink = [
   },
 ];
 
-export const buildAndGrow = {
+export const buildAndGrow = [
+  {
   heading: "Build & grow your online business with us",
   content:
-    "Set up and expand your business online with Retailry’s efficient and powerful e-commerce system. Retailry offers you a software in cloud that takes care of all your e-commerce needs anywhere, anytime, so you can take your business to the next level by focusing on the most important component, the product.",
-};
+    "The most efficient e-commerce solution for your business: set up, market, convert sales, expand, and take informed decisions with customized reports and insights. Manage payments, shipping, and online payments. Handling your business has never been this easy!",
+    button : "View Plans",
+    img: "src/assets/images/Build&Grow.svg"
+  }
+];
 
 export const buildAndGrowImage = {
   img: "src/assets/images/Build&Grow.svg",

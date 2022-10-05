@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import RetailryLogo from "../../assets/RetailryLogo.svg";
 import { Link } from "react-router-dom";
 import { navbarLink } from "../../Constant/RetailryConstant";
 function Header() {
+const [flag, setFlag] = useState(false)
+
   return (
     <>
       <div className="grayBackground fontRoboto p-3 fs-6">

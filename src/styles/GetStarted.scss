@@ -63,10 +63,10 @@
   }
 }
 
-@media (min-width: 320px) and (max-width: 420px) {
+@media (min-width: 320px) and (max-width: 576px) {
   .template-btn {
     button {
-      font-size: 0.65rem;
+      font-size: 0.65rem !important;
       font-weight: 500;
     }
     .Coustom-btn {
@@ -85,7 +85,7 @@
       flex-direction: column !important;
     }
 
-    .card {
+    .card-property {
       width: 22rem;
       margin-right: 0rem;
       margin-top: 0rem;

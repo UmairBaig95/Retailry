@@ -57,7 +57,7 @@ body {
 }
 
 .paragraphFont {
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
 }
 
 .form-control-lg {
@@ -98,10 +98,24 @@ body {
     }
   }
 }
-
+#featureBar
+{
+  a{
+  border-radius: 0px;
+  &:hover, :focus
+  {
+    background-color: #ffb34d ;
+    
+  }
+}
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .plr-2 {
     padding-left: 0rem;
     padding-right: 0rem;
+  }
+  #featureBar
+  {
+    display: none;
   }
 }

@@ -1,30 +1,54 @@
-import {
-  storeImg,
-  productsImg,
-  ordersImg,
-  dashboardImg,
-  seoImg,
-} from "../assets/images/feature/featureimages.js";
+export const eCommerceFeatures =  [
+  {
+  heading: "All e-commerce features in one place",
+  content:
+    "The most efficient e-commerce solution for your business: set up, market, convert sales, expand, and take informed decisions with customized reports and insights. Manage payments, shipping, and online payments. Handling your business has never been this easy!",
+    button : "View Plans",
+    img: "src/assets/images/Features/Shopping.svg"
+}
+]
 
-const Features = [
+export const featuresBarLink = [
+  {
+    name: "DIGITAL STOREFRONT",
+    path: "#featureOne",
+    id : 1
+  },
+  {
+    name: "PRODUCT & ITEMS",
+    path: "#featureTwo",
+    id : 2
+  },
+  {
+    name: "ORDERS & CAMPAIGNS",
+    path: "#featureThree",
+    id : 3
+  },
+  {
+    name: "ADMINISTRATOR DASHBOARD ",
+    path: "#featureFour",
+    id : 4
+  },
+  {
+    name: "SEO & MARKETING",
+    path: "#featureFive",
+    id : 5
+  },
+  {
+    name: "ROUND THE CLOCK ASSISTANCE",
+    path: "#featureSix",
+    id : 6
+  },
+];
+export const FeaturesData = [
   {
     Name: "Digital Storefront",
     Description:
       "",
-    Image: storeImg,
+    Image: "src/assets/images/Features/social media.svg",
     LinkId: "featureOne",
-    id: "#featureOne",
+    id: "featureOne",
     Detail: [
-      // {
-      //   Heading: "E-commerce",
-      //   HeadDescription:
-      //     "Boost your sales with us, and witness your business achieve greater heights, like never before!",
-      // },
-      // {
-      //   Heading: "User friendly",
-      //   HeadDescription:
-      //     "Boost your sales with us, and witness your business achieve greater heights, like never before!",
-      // },
       {
         Heading: "Web Hosting",
         HeadDescription:
@@ -56,9 +80,9 @@ const Features = [
     Name: "Products & Items",
     Description:
       "",
-    Image: productsImg,
+      Image: "src/assets/images/Features/productsItems.svg",
     LinkId: "featureTwo",
-    id: "#featureTwo",
+    id: "featureTwo",
     Detail: [
       {
         Heading: "Product Labels",
@@ -96,9 +120,9 @@ const Features = [
     Name: "Orders & Campaigns",
     Description:
       "",
-    Image: ordersImg,
+      Image: "src/assets/images/Features/ordersCampaigns.svg",
     LinkId: "featureThree",
-    id: "#featureThree",
+    id: "featureThree",
     Detail: [
       {
         Heading: "Order Notifications",
@@ -132,9 +156,9 @@ const Features = [
     Name: "Administrator Dashboard",
     Description:
       "",
-    Image: dashboardImg,
+      Image: "src/assets/images/Features/administratorDashboard.svg",
     LinkId: "featureFour",
-    id: "#featureFour",
+    id: "featureFour",
     Detail: [
       {
         Heading: "Order Management",
@@ -172,9 +196,9 @@ const Features = [
     Name: "SEO & Marketing",
     Description:
       "",
-    Image: seoImg,
+      Image: "src/assets/images/Features/sEOMarketing.svg",
     LinkId: "featureFive",
-    id: "#featureFive",
+    id: "featureFive",
     Detail: [
       {
         Heading: "Meta Titles",
@@ -219,7 +243,7 @@ const Features = [
     Description:
       "We make sure all processes are managed smoothly, and experts are available for technical support.",
     LinkId: "featureSix",
-    id: "#featureSix",
+    id: "featureSix",
     Detail: [
       {
         Heading: "Support Team",
@@ -240,4 +264,3 @@ const Features = [
   },
 ];
 
-export default Features;
