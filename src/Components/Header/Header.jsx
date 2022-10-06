@@ -1,4 +1,5 @@
 import RetailryLogo from "../../assets/RetailryLogo.svg";
+import {HashLink} from 'react-router-hash-link'
 import { Link } from "react-router-dom";
 function Header() {
   return (
@@ -39,12 +40,12 @@ function Header() {
                 </Link>
               </div>
               <div className="navbar-nav">
-                <a
+                <HashLink
                   className="nav-item nav-link active mx-3"
-                  href="/#getStartedSection"
+                  to="/#getStartedSection"
                 >
                   Templates
-                </a>
+                </HashLink>
                
               </div>
               <div className="navbar-nav">

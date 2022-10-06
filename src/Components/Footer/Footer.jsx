@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import RetailryFooter from "../../assets/images/RetailryFooter.svg";
 import { footerLink, footerSocialLink } from "../../Constant/RetailryConstant";
+import {HashLink} from "react-router-hash-link"
 import "../../styles/Footer.scss";
 import { Link } from 'react-router-dom'
 import { Context } from "../../Context/Context";
@@ -23,14 +24,14 @@ function Footer() {
           <div className="d-flex justify-content-center">
             {footerLink.map((link, index) => {
               return (
-                <a
+                <HashLink
                   className="mx-lg-4 link px-lg-1 my-5 px-1 text-decoration-none text-black fontRoboto"
                   key={link.id}
-                  href={window.location.href == "http://127.0.0.1:5173/features" ? '/' : link.path}
+                  to={link.path}
                   onClick={() => setactiveTemplate(link.id)}
                 >
                   {link.name}
-                </a>
+                </HashLink>
               );
             })}
           </div>

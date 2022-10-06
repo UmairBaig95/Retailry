@@ -16,27 +16,27 @@ export const navbarLink = [
 export const footerLink = [
   {
     name: "Fashion",
-    path: "#getStartedSection",
+    path: "/#getStartedSection",
     id : 1
   },
   {
     name: "Bakery",
-    path: "#getStartedSection",
+    path: "/#getStartedSection",
     id : 2
   },
   {
     name: "Education",
-    path: "#getStartedSection",
+    path: "/#getStartedSection",
     id : 3
   },
   {
     name: "Lab & Test",
-    path: "#getStartedSection",
+    path: "/#getStartedSection",
     id : 4
   },
   {
     name: "Electronics",
-    path: "#getStartedSection",
+    path: "/#getStartedSection",
     id : 5
   },
 ];
