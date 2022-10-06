@@ -1,0 +1,64 @@
+
+.coustom-checkbox {
+    display: flex;
+    .branding {
+      display: none;
+    }
+    .branding + label {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      width: 5.5rem;
+      height: 5.5rem;
+      border-radius: 50%;
+      background-color: white;
+      margin-right: 7rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .branding + label {
+      div {
+        svg {
+          margin-top: 1.4rem;
+          margin-left: 1.4rem;
+        }
+        h6 {
+          width: 10rem;
+          padding-top: 0.7em;
+        }
+      }
+    }
+    .branding:checked + label {
+      background-color: #008379;
+      div {
+        svg {
+          fill: white;
+        }
+        h6 {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  
+  @media (min-width: 320px) and (max-width: 576px) {
+    .coustom-checkbox {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10%;
+      .branding + label {
+        margin-right: 2rem;
+        div {
+          svg {
+          }
+          h6 {
+            width: 8rem;
+            padding-top: 0.7em;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,17 +1,16 @@
 .our-client-main {
- 
   padding-top: 4rem;
   .our-clients {
-    margin-top: 6rem !important;
-    padding-bottom: 0rem !important;
-    h1{
+    margin-top: 6rem;
+    padding-bottom: 0rem;
+    h1 {
       font-size: 30px;
     }
     .our-Client-Logo {
       display: grid;
       grid-template-columns: 1fr 1fr;
       .rounded {
-        padding: 1rem !important;
+        padding: 1rem;
         width: 13rem;
       }
     }
@@ -27,22 +26,23 @@
   .our-client-main {
     padding-top: 1rem;
     .our-clients {
-      margin-top: 2rem !important;
+      margin-top: 2rem;
       text-align: left;
-      h1{
+      h1 {
         font-size: 16px;
       }
-    }
-    .our-Client-Logo {
-      grid-template-columns: none !important;
-      justify-content: center;
-      .rounded {
-        margin-bottom: 1rem;
+
+      .our-Client-Logo {
+        grid-template-columns: none;
+        justify-content: center;
+        .rounded {
+          margin-bottom: 1rem;
+        }
       }
-    }
-    .our-client-image {
-      margin-left: 3.5rem;
-      margin-top: 3rem;
+      .our-client-image {
+        margin-left: 3.5rem;
+        margin-top: 3rem;
+      }
     }
   }
 }

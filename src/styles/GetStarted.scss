@@ -1,47 +1,40 @@
-.line-template {
-  position: relative;
-  top: -0.5rem;
-  border: none;
-  height: 4px;
-  width: 93% !important;
-  background: #63b3ad;
-  margin-bottom: 50px;
-  margin: 0rem 2.3rem;
-}
-
-.template-btn {
-  .Coustom-btn,
-  .Coustom-btn:hover,
-  .Coustom-btn:focus,
-  .Coustom-btn:active {
+.getStarted {
+  .line-template {
+    position: relative;
+    top: -0.5rem;
     border: none;
-    outline: none;
-    box-shadow: none;
-    background-color: #008379;
-    border-radius: 0px;
-    padding-bottom: 0.81rem;
+    height: 4px;
+    width: 93% !important;
+    background: #63b3ad;
+    margin-bottom: 50px;
+    margin: 0rem 2.3rem;
   }
-
-  .Coustom-btn:focus {
-    font-weight: 700;
-
-    z-index: 1;
-    opacity: 1;
-  }
-
-  .Coustom-btn {
-    svg {
-      position: absolute;
-      bottom: -0.5px;
-      left: 48%;
-      color: #ffb34d;
-      visibility: hidden;
+  .template-btn {
+    .Coustom-btn {
+      border: none;
+      outline: none;
+      box-shadow: none;
+      background-color: #008379;
+      border-radius: 0px;
+      padding-bottom: 0.81rem;
+      svg {
+        position: absolute;
+        bottom: -0.5px;
+        left: 48%;
+        color: #ffb34d;
+        visibility: hidden;
+      }
     }
-  }
-  .active-item {
-    border-bottom: 4px solid #ffb34d !important;
-    svg {
-      visibility: visible !important;
+    :focus {
+      font-weight: 700;
+      z-index: 1;
+      opacity: 1;
+    }
+    .active-item {
+      border-bottom: 4px solid #ffb34d !important;
+      svg {
+        visibility: visible !important;
+      }
     }
   }
 }
@@ -64,33 +57,33 @@
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
-  .template-btn {
-    button {
-      font-size: 0.8rem !important;
-      font-weight: 500;
+  .getStarted {
+    .line-template {
+      margin: 0rem 0rem;
     }
-    .Coustom-btn {
-      svg {
-        left: 43%;
+    .template-btn {
+      button {
+        font-size: 0.8rem !important;
+        font-weight: 500;
+      }
+      .Coustom-btn {
+        svg {
+          left: 43%;
+        }
       }
     }
-  }
+    .template-cards {
+      div:first-child {
+        flex-direction: column !important;
+      }
 
-  .line-template {
-    width: 90% !important;
-    margin: 0rem 0.4rem;
-  }
-  .template-cards {
-    div:first-child {
-      flex-direction: column !important;
-    }
-
-    .card-property {
-      width: 22rem;
-      margin-right: 0rem;
-      margin-top: 2rem;
-      padding: 2rem;
-      padding-top: 0rem;
+      .card-property {
+        width: 22rem;
+        margin-right: 0rem;
+        margin-top: 2rem;
+        padding: 2rem;
+        padding-top: 0rem;
+      }
     }
   }
 }

@@ -15,10 +15,13 @@ export default function DigitalStore({ data }) {
             <div className="col-md-4 d-none d-md-block">
               <img style={{ width: "80%" }} src={Image} alt="" />
             </div>
-            <div className="weAreProviding-cards digitalStore-cards   col-md-8 weAreProviding">
+            <div className="digitalStore-grid   col-md-8">
               {Detail.map((link, index) => {
                 return (
-                  <div key={index} className="card pr-3  grayBackground">
+                  <div
+                    key={index}
+                    className="card digitalStore-cards pr-3  grayBackground"
+                  >
                     <div className="row g-0">
                       <div className="col-md-12">
                         <div className="card-body  digitalStore-cards-body ">

@@ -7,7 +7,7 @@ function Phone({data}) {
     const [field, meta] = useField(data);
   return (
     <>
-      <div style={{fontSize: "1rem", fontFamily: "Poppins"}} className="mb-4" id='ikm'>
+      <div id="phone-input" className="mb-4 forms-fs-ff forms-text-field">
         <label className="form-label pl-0" htmlFor={field.name}>
           {data.label}
         </label>
@@ -18,7 +18,7 @@ function Phone({data}) {
               value={field.value}
               name={field.name}
               onChange={field.onChange(field.name)}
-              className={`phone-input ${
+              className={`phone-input  text-field ${
                meta.error? "invalid" : ""
               }`}
               inputProps={{

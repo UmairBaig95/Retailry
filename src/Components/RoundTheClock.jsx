@@ -9,7 +9,7 @@ export default function DigitalStore({ data }) {
           <div className="row">
             <div className="col-md-3"></div>
             <div className="col-md-6 text-center mx-md-5 py-md-5 px-md-4">
-              <h3 className="lh-base d-inline-block p-2 p-md-2 px-md-3  fontPoppins text-white greenBackground fw-bolder">
+              <h3 className="lh-base roundClock d-inline-block p-2 p-md-2 px-md-3 mx-3 mx-md-0  fontPoppins text-white greenBackground fw-bolder">
                 {Name}
               </h3>
               <p className="fontPoppins px-md-5 mx-2 mx-md-5 my-4 my-md-3 d-block lh-base">
@@ -19,12 +19,12 @@ export default function DigitalStore({ data }) {
             <div className="col-md-3"></div>
           </div>
           <div className="row ml-1 ml-md-4 mb-md-5 pl-md-4">
-            <div className="row weAreProviding">
+            <div className="row">
               {Detail.map((link, index) => {
                 return (
                   <div
                     key={index}
-                    className="card grayBackground col-md-4 col-sm-12 pr-0 position-relative"
+                    className="card border-0 grayBackground col-md-4 col-sm-12 pr-0 position-relative"
                   >
                     <div className="row g-0">
                       <div className="card-body p-0">

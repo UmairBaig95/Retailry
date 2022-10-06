@@ -1,10 +1,6 @@
-import React, {useState} from "react";
 import RetailryLogo from "../../assets/RetailryLogo.svg";
 import { Link } from "react-router-dom";
-import { navbarLink } from "../../Constant/RetailryConstant";
 function Header() {
-  const [url, setUrl] = useState('')
-console.log(window.location.href);
   return (
     <>
       <div className="grayBackground fontRoboto p-3 fs-6">
@@ -49,6 +45,7 @@ console.log(window.location.href);
                 >
                   Templates
                 </a>
+               
               </div>
               <div className="navbar-nav">
                 <Link className="nav-item nav-link active mx-3" to="/pricing">

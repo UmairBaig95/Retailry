@@ -6,7 +6,7 @@ function Email({data})  {
     const [field, meta] = useField(data);
   return (
     <>
-      <div className="form-outline mb-4">
+      <div className="form-outline forms-text-field forms-fs-ff mb-4">
         <label className="form-label pl-0" htmlFor={field.name}>
           {data.label}
         </label>
@@ -14,7 +14,7 @@ function Email({data})  {
             autoComplete="off"
             {...field}
             id={field.name}
-            className={`form-control text-field form-control-lg ${
+            className={`form-control  text-field form-control-lg ${
               meta.touched && meta.error && "is-invalid"
             }`}
           />

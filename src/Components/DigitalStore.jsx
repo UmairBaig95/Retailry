@@ -12,10 +12,10 @@ export default function DigitalStore({ data }) {
             </h1>
           </div>
           <div className="row ml-1 ml-md-4 pb-md-5 pl-md-4">
-            <div className="weAreProviding-cards digitalStore-cards col-md-8 weAreProviding">
+            <div className="digitalStore-grid col-md-8">
               {Detail.map((link, index) => {
                 return (
-                  <div key={index} className="card pr-3 ">
+                  <div key={index} className="card digitalStore-cards pr-3 ">
                     <div className="row g-0">
                       <div className="col-md-12">
                         <div className="card-body digitalStore-cards-body">

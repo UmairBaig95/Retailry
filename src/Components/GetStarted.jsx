@@ -54,7 +54,7 @@ function GetStarted() {
   }, [activeTemplate]);
   return (
     <>
-      <div id="getStartedSection" className="greenBackground py-5 py-md-5">
+      <div id="getStartedSection" className="greenBackground getStarted py-5 py-md-5">
         <div className="container px-3 px-md-5">
           <div className="py-md-5">
             <h1 className="text-center mx-lg-5 px-lg-5 lh-base fs-2 fontPoppins fw-bolder">

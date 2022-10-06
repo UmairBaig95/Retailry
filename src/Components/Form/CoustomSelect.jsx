@@ -1,7 +1,7 @@
 import Select from "react-select";
 import { useField, ErrorMessage } from "formik";
-import "../../styles/TextField.scss";
-
+// import "../../styles/TextField.scss";
+import "../../styles/CoustomSelect.scss"
 const options = [
   { value: "Facebook", label: "Facebook" },
   { value: "Instagram", label: "Instagram" },
@@ -18,7 +18,7 @@ function CoustomSelect({ data }) {
   };
   return (
     <>
-      <div className="form-outline mb-4">
+      <div className="form-outline  forms-fs-ff mb-4">
         <label className="form-label pl-0" htmlFor={field.name}>
           {data.label}
         </label>

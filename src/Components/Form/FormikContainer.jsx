@@ -5,7 +5,6 @@ import emailjs from "emailjs-com";
 import * as Yup from "yup";
 import "../../styles/contactUs.scss";
 import FormController from "./FormController";
-import "../../styles/TextField.scss";
 import BrandingSvg from "../../Components/SvgComponents/BrandingSvg";
 import MobileApp from "../../Components/SvgComponents/MobileApp";
 import PrintMedia from "../../Components/SvgComponents/PrintMedia";
@@ -83,7 +82,7 @@ function ContactUsForm() {
       {(formik) => (
         <div>
           <div className="mx-2 mx-md-5 pl-4 pl-md-2">
-            <div className="card contactUs-main mx-lg-5">
+            <div className="card contactUs-main formikContainerMain mx-lg-5">
               <div className="card-body mr-md-0 mr-2">
                 <Form>
                   <div className="row">

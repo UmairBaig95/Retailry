@@ -1,11 +1,12 @@
 import React from "react";
 import {FastField, ErrorMessage } from "formik";
+import "../../styles/Checkbox.scss"
 function Checkbox({ data }) {
   const { label, name, options, ...rest } = data
   return (
     <>
-      <label className="form-outline">{label}</label>
-      <div className="form-outline ">
+      <label className="forms-fs-ff ">{label}</label>
+      <div className="form-outline  forms-fs-ff  ">
       <div className="coustom-checkbox position-relative mb-4">
         <FastField name={name}>
           {({ field }) => {
