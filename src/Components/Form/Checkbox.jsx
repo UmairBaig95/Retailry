@@ -5,6 +5,7 @@ function Checkbox({ data }) {
   const { label, name, options, ...rest } = data
   return (
     <>
+    <section id="checkBox">
       <label className="forms-fs-ff ">{label}</label>
       <div className="form-outline  forms-fs-ff  ">
       <div className="coustom-checkbox position-relative mb-4">
@@ -37,6 +38,7 @@ function Checkbox({ data }) {
           className="error text-danger"
         />
         </div>
+        </section>
     </>
   );
 }

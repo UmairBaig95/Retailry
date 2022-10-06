@@ -10,6 +10,7 @@ function Footer() {
   const { activeTemplate, setactiveTemplate } = showTemplateData;
   return (
     <>
+    <section id="footer" >
       <div className="grayBackground py-5">
         <div className="container py-5">
           <div className="text-center">
@@ -57,6 +58,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }

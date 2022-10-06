@@ -7,6 +7,7 @@ function Phone({data}) {
     const [field, meta] = useField(data);
   return (
     <>
+    <section id='phone-field'>
       <div id="phone-input" className="mb-4 forms-fs-ff forms-text-field">
         <label className="form-label pl-0" htmlFor={field.name}>
           {data.label}
@@ -27,7 +28,8 @@ function Phone({data}) {
               }}
             />
             <p className="error text-danger py-2">{meta.error}</p>
-            </div>
+      </div>
+    </section>
            
     </>
   )

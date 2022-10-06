@@ -80,9 +80,10 @@ function ContactUsForm() {
       }}
     >
       {(formik) => (
-        <div>
+        <section id="formikContainer">
+        
           <div className="mx-2 mx-md-5 pl-4 pl-md-2">
-            <div className="card contactUs-main formikContainerMain mx-lg-5">
+            <div className="card contactUs-main grayBackground border-0 formikContainerMain mx-lg-5">
               <div className="card-body mr-md-0 mr-2">
                 <Form>
                   <div className="row">
@@ -152,7 +153,7 @@ function ContactUsForm() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       )}
     </Formik>
   );

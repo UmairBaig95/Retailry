@@ -18,6 +18,7 @@ function CoustomSelect({ data }) {
   };
   return (
     <>
+    <section id="coustomSelect">
       <div className="form-outline  forms-fs-ff mb-4">
         <label className="form-label pl-0" htmlFor={field.name}>
           {data.label}
@@ -35,6 +36,7 @@ function CoustomSelect({ data }) {
           className="error text-danger py-2"
         />
       </div>
+      </section>
     </>
   );
 }

@@ -5,6 +5,7 @@ import "../styles/WeAreProviding.scss";
 function WeAreProviding() {
   return (
     <>
+    <section id="weAreProviding">
       <div className="grayBackground py-5 py-md-5">
         <div className="container">
           <div className="py-md-5">
@@ -52,6 +53,7 @@ function WeAreProviding() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }
