@@ -11,7 +11,7 @@ function OurClients({ourClients}) {
       <div className="container our-client-main px-3 px-md-5">
         <div className="row px-md-4">
           <div className="our-clients col-md-6 col-sm-12">
-            <h1 className="lh-base fs-5 fs-md-2  fontPoppins fw-bold">
+            <h1 className="lh-base fontPoppins fw-bold">
               {ourClients.title}
             </h1>
             <p className="fontPoppins paragraphFont py-2 py-md-2 lh-base">

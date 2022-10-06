@@ -4,6 +4,9 @@
   .our-clients {
     margin-top: 6rem !important;
     padding-bottom: 0rem !important;
+    h1{
+      font-size: 30px;
+    }
     .our-Client-Logo {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -25,7 +28,10 @@
     padding-top: 1rem;
     .our-clients {
       margin-top: 2rem !important;
-      text-align: center;
+      text-align: left;
+      h1{
+        font-size: 16px;
+      }
     }
     .our-Client-Logo {
       grid-template-columns: none !important;

@@ -7,7 +7,7 @@ function Phone({data}) {
     const [field, meta] = useField(data);
   return (
     <>
-      <div className="mb-4" id='ikm'>
+      <div style={{fontSize: "1rem", fontFamily: "Poppins"}} className="mb-4" id='ikm'>
         <label className="form-label pl-0" htmlFor={field.name}>
           {data.label}
         </label>

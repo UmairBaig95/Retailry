@@ -5,7 +5,8 @@ function Checkbox({ data }) {
   return (
     <>
       <label className="form-outline">{label}</label>
-      <div className="coustom-checkbox position-relative mb-5">
+      <div className="form-outline ">
+      <div className="coustom-checkbox position-relative mb-4">
         <FastField name={name}>
           {({ field }) => {
             return options.map((option, i) => {
@@ -27,12 +28,14 @@ function Checkbox({ data }) {
             });
           }}
         </FastField>
-        <ErrorMessage
+        
+      </div>
+      <ErrorMessage
           component="div"
           name={name}
-          className="error text-danger py-2"
+          className="error text-danger"
         />
-      </div>
+        </div>
     </>
   );
 }

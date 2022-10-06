@@ -31,7 +31,7 @@ export default function DigitalStore({ data }) {
                                 <path
                                   d="M115 1062.9a5 5 0 1 1 0 .1z"
                                   fill="#ffb34d"
-                                  fill-rule="evenodd"
+                                  fillRule="evenodd"
                                   data-name="Ellipse 3"
                                 />
                               </svg>

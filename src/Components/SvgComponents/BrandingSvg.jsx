@@ -52,7 +52,7 @@ c239 0 435 -2 435 -5z m893 -503 c39 -34 6 -112 -48 -112 -54 0 -87 78 -47
 121 -165 121 -31 0 -47 -6 -65 -26z"/>
 </g>
 </svg>
-<h6 className='my-4 ml-2'>Branding</h6>
+<h6 className='mt-4 ml-2'>Branding</h6>
     </div>
   )
 }

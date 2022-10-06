@@ -3,8 +3,8 @@ import RetailryLogo from "../../assets/RetailryLogo.svg";
 import { Link } from "react-router-dom";
 import { navbarLink } from "../../Constant/RetailryConstant";
 function Header() {
-const [flag, setFlag] = useState(false)
-
+  const [url, setUrl] = useState('')
+console.log(window.location.href);
   return (
     <>
       <div className="grayBackground fontRoboto p-3 fs-6">
@@ -45,7 +45,7 @@ const [flag, setFlag] = useState(false)
               <div className="navbar-nav">
                 <a
                   className="nav-item nav-link active mx-3"
-                  href="#getStartedSection"
+                  href="/#getStartedSection"
                 >
                   Templates
                 </a>

@@ -26,7 +26,7 @@ function Footer() {
                 <a
                   className="mx-lg-4 link px-lg-1 my-5 px-1 text-decoration-none text-black fontRoboto"
                   key={link.id}
-                  href={link.path}
+                  href={window.location.href == "http://127.0.0.1:5173/features" ? '/' : link.path}
                   onClick={() => setactiveTemplate(link.id)}
                 >
                   {link.name}

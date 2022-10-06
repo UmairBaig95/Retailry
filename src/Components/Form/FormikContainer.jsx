@@ -11,6 +11,7 @@ import MobileApp from "../../Components/SvgComponents/MobileApp";
 import PrintMedia from "../../Components/SvgComponents/PrintMedia";
 import DigitalMarketing from "../../Components/SvgComponents/DigitalMarketing";
 import ECommerce from "../../Components/SvgComponents/ECommerce";
+import { useEffect } from "react";
 function ContactUsForm() {
   const [isVerified, setIsVerified] = useState(false);
   const checkBoxOptions = [
@@ -36,30 +37,9 @@ function ContactUsForm() {
     email: Yup.string().email("Email is Invalid").required("Email is required"),
     companyName: Yup.string().required("Company Name is required"),
     aboutUs: Yup.string().required("Feedback is require"),
-    checkBoxOptions: Yup.array().required("At Least Select One!"),
+    checkBoxOptions: Yup.array().min(1, "At least one must be selected"),
     message: Yup.string().required("Require"),
   });
-  const sendEmail = (e) => {
-    if (isVerified === true) {
-      e.preventDefault();
-      emailjs
-        .sendForm(
-          "service_jlzo82c",
-          "template_6ji3zpt",
-          e.target,
-          "3yDMdm_GlFO-4PVi8"
-        )
-        .then((res) => {
-          console.log(res);
-        })
-        .catch((err) => console.log(err));
-      setIsVerified(false);
-      initialValues = {};
-    } else {
-      e.preventDefault();
-      alert("You Need to Verify First");
-    }
-  };
   function captchaOnChange(value) {
     console.log("Captcha value:", value);
     setIsVerified(true);
@@ -76,8 +56,28 @@ function ContactUsForm() {
         checkBoxOptions: [],
       }}
       validationSchema={validate}
-      onSubmit={(values, e) => {
+   onSubmit={(values, {resetForm}) => {
         console.log("values", values);
+        if (isVerified === true) {
+        try{
+          emailjs.send(  "service_jlzo82c",
+          "template_6ji3zpt",
+          values,
+          "3yDMdm_GlFO-4PVi8")
+            .then(() => {
+              alert("Form Submit Successfully")
+              
+               resetForm({});
+               
+                  });
+           }
+           catch {
+       
+          }
+        }
+        else {
+              alert("You Need to Verify First");
+            }
       }}
     >
       {(formik) => (
@@ -85,7 +85,7 @@ function ContactUsForm() {
           <div className="mx-2 mx-md-5 pl-4 pl-md-2">
             <div className="card contactUs-main mx-lg-5">
               <div className="card-body mr-md-0 mr-2">
-                <Form onSubmit={sendEmail}>
+                <Form>
                   <div className="row">
                     <div className="col-md-4 col-sm-12 mb-3">
                       <FormController

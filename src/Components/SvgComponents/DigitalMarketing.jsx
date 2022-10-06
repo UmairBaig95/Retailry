@@ -83,7 +83,7 @@ m146 -190 c8 -79 20 -98 89 -134 78 -42 99 -44 155 -15 40 20 41 20 60 2 18
 -80 79 -19 0 -40 -9 -55 -25z"/>
 </g>
 </svg>
-<h6 style={{marginLeft: "-1rem"}} className='my-4'> Digital Marketing</h6>
+<h6 style={{marginLeft: "-1rem"}} className='mt-4'> Digital Marketing</h6>
     </div>
   )
 }

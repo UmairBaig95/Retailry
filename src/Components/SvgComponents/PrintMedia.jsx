@@ -76,7 +76,7 @@ c-1 -16 -6 -57 -13 -93 l-12 -65 -140 -3 c-159 -3 -175 -10 -175 -72 0 -64 22
 229 25 25 39 30 76 30 42 0 50 -4 89 -47z"/>
 </g>
 </svg>
-<h6 className='my-4 ml-1'>Print Media</h6>
+<h6 className='mt-4 ml-1'>Print Media</h6>
     </div>
   )
 }

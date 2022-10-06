@@ -44,7 +44,7 @@ c27 24 33 36 33 71 0 35 -6 47 -33 71 l-32 29 -358 -1 c-196 0 -367 -4 -378
 -29z"/>
 </g>
 </svg>
-<h6 className='my-4 ml-1'>Mobile App</h6>
+<h6 className='mt-4 ml-1'>Mobile App</h6>
     </div>
   )
 }
