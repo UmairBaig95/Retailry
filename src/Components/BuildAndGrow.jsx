@@ -4,8 +4,7 @@ import Button from "./Button";
 function BuildAndGrow({ props }) {
   return (
     <>
-      <section id="buildAndGrowSection">
-        <div className="grayBackground">
+      <section id="buildAndGrowSection" className="grayBackground">
           <div className="container">
             <div className="row plr-2">
               <div className="px-md-5 py-4 px-4 my-md-5 py-md-5 col-md-6 col-sm-12">
@@ -20,7 +19,6 @@ function BuildAndGrow({ props }) {
               </div>
             </div>
           </div>
-        </div>
       </section>
     </>
   );

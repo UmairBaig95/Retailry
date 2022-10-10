@@ -65,7 +65,7 @@ function GetStarted() {
                 {getStarted.content}
               </p>
             </div>
-            <div className="row ml-0 w-100">
+            <div style={{width: "95%"}} className="row ml-2">
               <div
                 id="main"
                 className="d-flex template-btn justify-content-center"

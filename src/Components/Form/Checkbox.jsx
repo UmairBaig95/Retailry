@@ -5,9 +5,8 @@ function Checkbox({ data }) {
   const { label, name, options, ...rest } = data
   return (
     <>
-    <section id="checkBox">
-      <label className="forms-fs-ff ">{label}</label>
-      <div className="form-outline  forms-fs-ff  ">
+      <label className="forms-fs-ff">{label}</label>
+      <div className="form-outline forms-fs-ff  ">
       <div className="coustom-checkbox position-relative mb-4">
         <FastField name={name}>
           {({ field }) => {
@@ -35,10 +34,9 @@ function Checkbox({ data }) {
       <ErrorMessage
           component="div"
           name={name}
-          className="error text-danger"
+          className="error text-danger mt-5 mt-md-0 pt-5 pt-md-0"
         />
         </div>
-        </section>
     </>
   );
 }

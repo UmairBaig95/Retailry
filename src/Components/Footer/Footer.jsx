@@ -19,7 +19,7 @@ function Footer() {
               width="150"
               height="115"
               className="d-inline-block align-top"
-              alt=""
+              alt="RetailryFooterLogo"
             />
           </div>
           <div className="d-flex justify-content-center">
@@ -50,7 +50,7 @@ function Footer() {
                     width="36"
                     height="36"
                     className="d-inline-block align-top"
-                    alt=""
+                    alt="footerSocialLink"
                   />
                 </a>
               );

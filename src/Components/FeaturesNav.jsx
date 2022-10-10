@@ -2,7 +2,7 @@ import React from "react";
 import { featuresBarLink } from "../Constant/FeatureData";
 function FeaturesNav() {
   return (
-    <section id="featureBarSection">
+    <>
       <div
         id="featureBar"
         style={{ top: "0px", zIndex: "100" }}
@@ -22,7 +22,7 @@ function FeaturesNav() {
           })}
         </nav>
       </div>
-    </section>
+    </>
   );
 }
 

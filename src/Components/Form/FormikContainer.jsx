@@ -132,14 +132,15 @@ function ContactUsForm() {
                       />
                     </div>
                   </div>
-                  <div className="d-flex">
-                    <div className="col-md-12 mb-3 mt-md-2 mt-5 pt-md-0 pt-4 pl-0">
+                  <div className="d-flex mt-4">
+                    <div className="col-md-12 mb-3 mt-md-2 mt-5 pl-0">
                       <FormController label="Body" name="message" type="text" />
                     </div>
                   </div>
                   <ReCAPTCHA
                     sitekey=" 6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                     onChange={captchaOnChange}
+                    className="g-recaptcha"
                   />
                   <div className="d-flex justify-content-start mt-3">
                     <button

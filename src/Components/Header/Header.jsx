@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <>
-      <section id="headerSection">
+      <header id="headerSection">
         <div className="grayBackground fontRoboto p-3 fs-6">
           <div className="container">
             <nav className="navbar navbar-expand-lg navbar-light px-lg-4 mx-lg-5">
@@ -60,7 +60,7 @@ function Header() {
             </nav>
           </div>
         </div>
-      </section>
+      </header>
     </>
   );
 }

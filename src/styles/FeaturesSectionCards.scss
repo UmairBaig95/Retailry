@@ -1,20 +1,37 @@
 .digitalStore {
-  .digitalStore-container {
-    .digitalStore-heading {
-      display: inline-block;
-      h1 {
-        font-size: 30px;
+  .bg-color {
+    &:nth-child(odd) {
+      background-color: white;
+      .feature-row {
+        flex-direction: row-reverse;
       }
     }
-    .digitalStore-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-top: 3rem;
-      .digitalStore-cards {
-        border: none;
-        .digitalStore-cards-body {
-          padding-right: 6rem;
-          outline: none;
+    &:nth-child(even) {
+      .feature-row {
+        .digitalStore-cards {
+          background-color: #f1f6f5;
+        }
+      }
+    }
+
+    .digitalStore-container {
+      .digitalStore-heading {
+        display: inline-block;
+        h1 {
+          font-size: 30px;
+        }
+      }
+
+      .digitalStore-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 3rem;
+        .digitalStore-cards {
+          border: none;
+          .digitalStore-cards-body {
+            padding-right: 6rem;
+            outline: none;
+          }
         }
       }
     }
@@ -24,32 +41,35 @@
 @media (min-width: 320px) and (max-width: 576px) {
   .digitalStore {
     text-align: center;
-    .roundClock {
-      font-size: 21px;
-    }
-    .digitalStore-container {
-      .digitalStore-heading {
-        display: inline-block;
-        h1 {
-          font-size: 16px;
+    .bg-color {
+      .digitalStore-container {
+        .digitalStore-heading {
+          display: inline-block;
+          h1 {
+            font-size: 16px;
+          }
         }
-      }
-
-      .digitalStore-grid {
-        grid-template-columns: 1fr;
-        margin-top: 0rem !important;
-        text-align: center;
-        .digitalStore-cards {
-          padding-right: 0rem;
-          padding: 1rem 0rem;
-          .digitalStore-cards-body {
-            padding: 0rem;
-            p {
-              padding: 0rem;
+        .feature-row {
+          .digitalStore-grid {
+            grid-template-columns: 1fr;
+            margin-top: 0rem !important;
+            text-align: center;
+            .digitalStore-cards {
+              padding-right: 0rem;
+              padding: 1rem 0rem;
+              .digitalStore-cards-body {
+                padding: 0rem;
+                p {
+                  padding: 0rem;
+                }
+              }
             }
           }
         }
       }
     }
+  }
+  .roundClock {
+    font-size: 21px;
   }
 }

@@ -1,8 +1,9 @@
 .eCommerce-main {
   .eCommerce-main-title {
-    h1 {
-      padding: 0rem 14rem !important;
-    }
+    max-width: 650px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .eCommerce-image-cards {
